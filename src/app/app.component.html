@@ -1,0 +1,16 @@
+
+<h1>Filter List</h1>
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Filter</title>
+</head>
+<body>
+    <label class="d-block" for="file">Filter Type</label><br>
+    <button (click)="onFilterType('all')"> All Type</button>
+    <button (click)="onFilterType('ios')">ios</button>
+    <button (click)="onFilterType('android')">android</button>
+    <div style="color: red">{{ list | json }}</div>
+</body>
+</html>
